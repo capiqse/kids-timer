@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Tracker for Kids</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Time Tracker for Kids</h1>
+        
+        <div class="language-switcher">
+            <label for="languageSelect">Language:</label>
+            <select id="languageSelect">
+                <option value="en">English</option>
+                <option value="sv">Svenska</option>
+            </select>
+        </div>
+        
+        <div class="clock-container">
+            <canvas id="analogClock" width="200" height="200"></canvas>
+            <svg id="progressBar" width="240" height="240">
+                <circle cx="120" cy="120" r="110" stroke="#eee" stroke-width="10" fill="none"/>
+                <circle cx="120" cy="120" r="110" stroke="#00f" stroke-width="10" fill="none" 
+                        stroke-dasharray="691" stroke-dashoffset="691" />
+            </svg>
+        </div>
+        
+        <div class="timer-container">
+            <label id="timeInputLabel" for="timeInput">Set Timer (minutes):</label>
+            <input type="number" id="timeInput" min="1" max="60">
+            <button id="startButton">Start Countdown</button>
+            <div id="countdownDisplay">00:00</div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

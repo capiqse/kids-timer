@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.language-switcher {
+    margin-bottom: 20px;
+}
+
+.language-switcher label, .language-switcher select {
+    font-size: 1.2em;
+    margin: 0 10px;
+}
+
+.clock-container {
+    position: relative;
+    width: 240px;
+    height: 240px;
+    margin: 0 auto 20px;
+}
+
+#analogClock {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.daytime {
+    background-color: #79c7e6;
+}
+
+.nighttime {
+    background-color: #073b8a;
+}
+
+#progressBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(-90deg);
+    pointer-events: none;
+}
+
+.timer-container {
+    margin-top: 20px;
+}
+
+label, input, button, #countdownDisplay {
+    display: block;
+    margin: 10px auto;
+    font-size: 1.2em;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #00f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0059b3;
+}
